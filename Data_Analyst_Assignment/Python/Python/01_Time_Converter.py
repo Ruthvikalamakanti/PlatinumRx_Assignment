@@ -1,8 +1,7 @@
-s = input("Enter string: ")
- new= ""
+n = int(input("Enter minutes: "))
 
-for i in s:
-    if i  not in new:
-        new+=i
+h = n // 60
+m = n % 60
 
-print(new)
+ans = f"{h} hours {m} minutes"
+print(ans)
